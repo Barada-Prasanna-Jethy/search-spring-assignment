@@ -1,0 +1,154 @@
+/* pagination component */
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* search component */
+
+.searchForm {
+  width: fit-content;
+  margin: auto;
+}
+
+/* header component */
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e3c0f9;
+  padding: 0 30px;
+  -webkit-box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+.titleText {
+  font-weight: bold;
+  font-size: x-large;
+  color: #4c4054;
+}
+
+.cartIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.cartContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* product list component */
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* product component */
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 13px -7px #b3b2b2, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  margin: 40px auto;
+  background: white;
+}
+.productDetails {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.productImage {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.productName {
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.productPrice {
+  font-weight: bold;
+  color: #ff8a76;
+  margin-left: 5px;
+}
+
+.beforeDiscount {
+  text-decoration: line-through;
+}
+
+.button {
+  background: #57c4e4;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+  margin: 20px;
+}
+
+.active {
+  background: #245260;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* loader component */
+
+.loaderContainer {
+  height: 100%;
+  padding: 13% 0;
+}
+
+.loader {
+  width: 50px;
+  padding: 8px;
+  margin: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}

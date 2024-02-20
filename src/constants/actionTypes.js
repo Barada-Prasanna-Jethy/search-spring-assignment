@@ -1,0 +1,7 @@
+export const PRODUCT_ACTIONS = {
+  FETCH_PRODUCT: "FETCH_PRODUCT",
+  SET_LOADING: "SET_LOADING",
+};
+export const CART_ACTIONS = {
+  ADD_TO_CART: "ADD_TO_CART",
+};
